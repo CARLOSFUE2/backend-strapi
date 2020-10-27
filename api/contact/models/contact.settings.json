@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts",
+  "info": {
+    "name": "contact",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "responded": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "message": {
+      "type": "text",
+      "required": true
+    },
+    "response": {
+      "type": "text"
+    },
+    "firstname": {
+      "type": "string",
+      "required": false
+    },
+    "lastname": {
+      "type": "string",
+      "required": false
+    },
+    "email": {
+      "type": "email",
+      "required": false,
+      "unique": true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_users_shopping_carts",
+  "info": {
+    "name": "ShoppingCart",
+    "icon": "dolly"
+  },
+  "options": {},
+  "attributes": {
+    "amount": {
+      "type": "integer",
+      "min": 1,
+      "required": true
+    },
+    "product": {
+      "model": "product"
+    }
+  }
+}
